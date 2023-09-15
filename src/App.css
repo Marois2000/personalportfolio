@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --accent: #9A0404
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar {
+    width: 5px;
+    right: 50px;
+} 
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: rgb(29, 29, 29);
+    border-radius: 10px;
+    margin: 30px 0px;
+} 
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+body {
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+  align-items: flex-end;
+  justify-content: center;
   display: flex;
   flex-direction: column;
+}
+
+.scroll {
+  position: absolute;
+  right: 0;
+  color: #fff;
+  background-color: #fff;
+  height: 100vh;
+}
+
+.navbar {
+  position: fixed;
+  height: 100vh;
+  width: 10vw;
+  left: 0;
+  top: 0;
+  background-color: var(--accent, #9A0404);
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
+  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  border-top: 20px solid #000;
+  border-bottom: 20px solid #000;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: flex;
+  z-index: 10;
+}
+
+.navbar div {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 90%;
+}
+
+.navbar img {
+  width: 150px;
+  mask-image: url("/public/img/circle.svg");
+  mask-repeat: no-repeat;
+  background-color: white;
+}
+
+.navbar div button {
   color: white;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-variant: small-caps;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar div button:hover {
+  scale: 105%;
+  cursor: pointer;
+  color: #e8e8e8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero {
+  width: 90vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  overflow: hidden;
 }
+
+.hero h1 {
+  font-size: 6rem;
+  margin: 20px 0;
+
+}
+
+.hero h2 {
+  font-size: 4rem;
+  margin: 30px 0;
+  font-variant: small-caps;
+}
+
+.hero span {
+  font-size: 2.5rem;
+}
+
+.hero .title {
+  color: white;
+  margin: 0px 5vw;
+}
+
+.tilter {
+  overflow: hidden;
+}
+
+.hero .profile {
+  margin: 100px;
+  overflow: hidden;
+}
+
+.hero .profile img {
+  width: 600px;
+  overflow: hidden;
+}
+
+.about {
+  width: 90vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  overflow: hidden;
+}
+
+
+
+
+
+
