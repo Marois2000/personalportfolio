@@ -1,16 +1,61 @@
 import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export const Navbar = () => {
     return (
         <div className="navbar">
             <div>
                 <img src="img/headshot.png" alt="Of Tyler Marois" />
-                <button>Home</button>
-                <button>About</button>
-                <button>Experience</button>
-                <button>Skills</button>
-                <button>Projects</button>
-                <button>Contact</button>
+                <button>
+                    <Link
+                    activeClass="active"
+                    to="hero"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    >Home</Link>
+                </button>
+                <button><Link
+                    activeClass="active"
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    >About</Link></button>
+                <button><Link
+                    activeClass="active"
+                    to="skills"
+                    spy={true}
+                    smooth={true}
+                    offset={-75}
+                    duration={500}
+                    >Skills</Link></button>
+                <button><Link
+                    activeClass="active"
+                    to="experience"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={500}
+                    >Experience</Link></button>
+                <button><Link
+                    activeClass="active"
+                    to="projects"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                    >Projects</Link></button>
+                <button><Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={500}
+                    >Contact</Link></button>
             </div>
         </div>
     );

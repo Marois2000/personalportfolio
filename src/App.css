@@ -72,9 +72,8 @@ body {
 }
 
 .navbar img {
-  width: 150px;
-  mask-image: url("/public/img/circle.svg");
-  mask-repeat: no-repeat;
+  width: 125px;
+  border-radius: 50px;
   background-color: white;
 }
 
@@ -85,6 +84,7 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   font-variant: small-caps;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
 .navbar div button:hover {
@@ -97,7 +97,7 @@ body {
   width: 90vw;
   height: 100vh;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   display: flex;
   overflow: hidden;
 }
@@ -105,7 +105,6 @@ body {
 .hero h1 {
   font-size: 6rem;
   margin: 20px 0;
-
 }
 
 .hero h2 {
@@ -120,7 +119,7 @@ body {
 
 .hero .title {
   color: white;
-  margin: 0px 5vw;
+  margin: 0px 5px;
 }
 
 .tilter {
@@ -128,8 +127,7 @@ body {
 }
 
 .hero .profile {
-  margin: 100px;
-  overflow: hidden;
+  margin: 50px;
 }
 
 .hero .profile img {
@@ -137,14 +135,268 @@ body {
   overflow: hidden;
 }
 
+.hero .point {
+  margin-top: 50px;
+}
+
 .about {
   width: 90vw;
-  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #fff;
+  margin-bottom: 100px;
+  font-size: 3rem;
+}
+
+.point {
+  background-color: var(--accent);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 30px;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+}
+
+.point:hover {
+  scale: 105%;
+  cursor: pointer;
+}
+
+.about h1 {
+  font-size: 6rem;
+  margin: 20px 0;
+}
+
+.about p {
+  font-size: 1rem;
+  margin: 20px 0;
+  max-width: 60ch;
+  text-align: justify;
+}
+
+
+.skillcard {
+  color: #fff;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  font-size: 0.7rem;
+  margin: 10px;
+}
+
+.skillcard img{
+  margin-right: 10px;
+}
+
+.skills {
+  width: 90vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #fff;
+  font-size: 3rem;
+  margin: 300px 0px;
+}
+
+.skills .skillholder {
+  margin-top: 30px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 3fr)); /* Adjust the column width as needed */
+  gap: 10px;
+}
+
+.jobskill {
+  color: #fff;
+  border: 2px solid white;
+  border-radius: 40%;
+  width: fit-content;
+  padding: 10px;
+  margin: 5px;
+}
+
+.jobname {
+  color: #fff;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 10px;
+}
+
+.joblocation {
+  color: #fff;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.jobcard {
+  width: 70%;
+  background-color: var(--accent);
+  border-radius: 30px;
+  margin: 30px;
+}
+
+.jobcard h1 {
+  font-size: 2rem;
+}
+
+.jobcard h2 {
+  font-size: 1rem;
+}
+
+
+.jobcard .jobcardhead {
   align-items: center;
   justify-content: space-between;
   display: flex;
-  overflow: hidden;
+  flex-wrap: wrap;
+  
 }
+
+.jobcard .jobdescription {
+  color: #fff;
+  margin: 10px;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.jobcard .jobcardfoot {
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  font-size: 0.8rem;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.experience {
+  width: 90vw;
+  margin: 200px 0px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.projects {
+  width: 90vw;
+  margin: 200px 0px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.projectcard {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  width: 550px;
+  background-color: var(--accent);
+  border-radius: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.projectcard .projectimage {
+  height: 250px;
+  align-items: stretch;
+}
+
+.projectcard .projectdescription {
+  font-size: 1rem;
+  align-items: flex-end;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px;
+  text-align: right;
+}
+
+.projectcard .projectdescription p {
+  font-size: 0.8rem;
+  max-width: 40ch;
+}
+
+.projectcard .projectimage img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  transition: all ease-in-out 0.3s;
+}
+
+.projectcard .projectimage img:hover{
+  border-radius: 30px;
+  border: 3px solid var(--accent);
+  scale: 150%;
+}
+
+.projectgrid {
+  align-items: center;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 3fr));
+  margin-top: 20px;
+}
+
+.contact {
+  width: 90vw;
+  margin: 100px 0px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.contact .personals{
+  margin-top: 100px;
+  font-size: .3em;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.contact .personals a{
+  color: var(--accent);
+}
+
+.contact .socials {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 50px;
+}
+
+
+
 
 
 

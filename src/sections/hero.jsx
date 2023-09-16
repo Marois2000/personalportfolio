@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Typed from 'typed.js'
 import Tilt from 'react-parallax-tilt';
+import { Link } from "react-scroll";
 
 export const Hero = () => {
 
@@ -26,11 +27,20 @@ export const Hero = () => {
 
 
     return (
-        <div className="hero">
+        <div className="hero" title="home">
             <div className="title">
                 <h1>Hello!</h1>
                 <h2>I am Tyler Marois</h2>
                 <span ref={slogan}></span>
+                <br />
+                <button className="point"><Link
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={175}
+                    duration={500}
+                    >Contact Me</Link></button>
             </div>
             <Tilt className="tilter" tiltReverse={true}>
                 <div className="profile">
