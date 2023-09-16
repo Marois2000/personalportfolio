@@ -9,7 +9,7 @@ export const ProjectCard = (props) => {
     return (
         <div className="projectcard" onClick={handleClick}>
             <div className="projectimage">
-                <img src={`/img/project_images/${props.img}`} alt={props.alt} />
+                <img src={`img/project_images/${props.img}`} alt={props.alt} />
             </div>
             <div className="projectdescription">
                 <h1>{props.name}</h1>
