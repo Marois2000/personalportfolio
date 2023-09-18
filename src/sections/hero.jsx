@@ -28,7 +28,7 @@ export const Hero = () => {
 
 
     return (
-        <div className="hero" title="home">
+        <div className="hero section" title="home">
             <div className="title">
                 <h1>Hello!</h1>
                 <h2>I am Tyler Marois</h2>

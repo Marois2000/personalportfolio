@@ -3,7 +3,7 @@ import { JobCard } from "../components/jobcard";
 
 export const Experience = () => {
     return(
-        <div className="experience" title="experience">
+        <div className="experience section" title="experience">
             <h1>Professional Experience</h1>
             <JobCard company="Guarino Construction LLC."
             title="Website Administrator"
