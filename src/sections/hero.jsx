@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Typed from 'typed.js'
 import Tilt from 'react-parallax-tilt';
 import { Link } from "react-scroll";
+import  headshot  from "../img/headshot_onblob.png"
 
 export const Hero = () => {
 
@@ -44,7 +45,7 @@ export const Hero = () => {
             </div>
             <Tilt className="tilter" tiltReverse={true}>
                 <div className="profile">
-                    <img src="img/headshot_onblob.png" alt="of Tyler Marois" />
+                    <img src={headshot} alt="of Tyler Marois" />
                 </div>
             </Tilt>
             

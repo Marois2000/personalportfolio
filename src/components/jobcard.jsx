@@ -14,7 +14,7 @@ export const JobCard = (props) => {
                 <p>{props.description}</p>
             </div>
             <div className="jobcardfoot">
-                {props.skills.map((skill) => <JobSkill skill={skill}/>)}
+                {props.skills.map((skill, key) => <JobSkill skill={skill} key={key}/>)}
             </div>
         </div>
     )

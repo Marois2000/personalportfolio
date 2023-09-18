@@ -1,11 +1,12 @@
 import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
+import headshot from "../img/headshot.png"
 
 export const Navbar = () => {
     return (
         <div className="navbar">
             <div>
-                <img src="img/headshot.png" alt="Of Tyler Marois" />
+                <img src={headshot} alt="Of Tyler Marois" />
                 <button>
                     <Link
                     activeClass="active"
