@@ -8,7 +8,7 @@ export const Navbar = () => {
             <div>
                 <img src={headshot} alt="Of Tyler Marois" />
                 <button>
-                    <Link
+                    <Link className="nav"
                     activeClass="active"
                     to="hero"
                     spy={true}
@@ -17,7 +17,7 @@ export const Navbar = () => {
                     duration={500}
                     >Home</Link>
                 </button>
-                <button><Link
+                <button><Link className="nav"
                     activeClass="active"
                     to="about"
                     spy={true}
@@ -25,7 +25,7 @@ export const Navbar = () => {
                     offset={0}
                     duration={500}
                     >About</Link></button>
-                <button><Link
+                <button><Link className="nav"
                     activeClass="active"
                     to="skills"
                     spy={true}
@@ -33,7 +33,7 @@ export const Navbar = () => {
                     offset={-75}
                     duration={500}
                     >Skills</Link></button>
-                <button><Link
+                <button><Link className="nav"
                     activeClass="active"
                     to="experience"
                     spy={true}
@@ -41,7 +41,7 @@ export const Navbar = () => {
                     offset={-100}
                     duration={500}
                     >Experience</Link></button>
-                <button><Link
+                <button><Link className="nav"
                     activeClass="active"
                     to="projects"
                     spy={true}
@@ -49,7 +49,7 @@ export const Navbar = () => {
                     offset={0}
                     duration={500}
                     >Projects</Link></button>
-                <button><Link
+                <button><Link className="nav"
                     activeClass="active"
                     to="contact"
                     spy={true}

@@ -281,7 +281,6 @@ h2 {
   flex-direction: column;
   overflow: hidden;
   color: #fff;
-  font-size: 3rem;
 }
 
 .projects {
@@ -436,6 +435,106 @@ h2 {
     padding: 0px;
     margin: 0px;
   }
+
+  .skillcard h1{
+    font-size: 1rem;
+  }
+
+  .projectcard h1{
+    font-size: 1.5rem;
+  }
+
+  .projectcard .projectdescription {
+    padding: 0px 5px;
+  }
+
+  .jobcardhead h1{
+    font-size: 1rem;
+  }
+
+  .jobcardhead h2 {
+    font-size: .8rem;
+  }
+
+  .jobname, .joblocation {
+    width: 100%;
+  }
+
+  .jobcardhead {
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    display: flex;
+  }
+
+  p {
+    font-size: .8rem;
+  }
+
+  .jobcardhead .jobdescription p{
+    font-size: .5rem;
+  }
+
+  .jobskill {
+    font-size: .5rem;
+  }
+}
+
+@media (max-width: 880px) {
+  h1, span, h2  {
+    font-size: 1.2rem;
+  }
+
+  .point{
+    font-size: .8rem;
+    margin: 0px;
+    padding: 5px;
+  }
+
+  .about p {
+    font-size: .8rem;
+  }
+
+  .hero .tilter img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 640px) {
+  h1, span, h2  {
+    font-size: 1rem;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    padding-top: 10vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .tilter {
+    background-color: #fff;
+  }
+
+  .hero .title {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    flex: 1;
+  }
+
+  .hero .title br {
+    display: none;
+  }
+
+  .profile {
+    margin: 0px;
+  }
+
 }
 
 
