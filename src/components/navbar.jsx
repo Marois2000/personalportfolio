@@ -1,12 +1,26 @@
 import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import headshot from "../img/headshot.png"
+import MenuIcon from "../img/menu.png"
+import { useState } from "react";
 
 export const Navbar = () => {
+
+    const [menu, setMenu] = useState("off")
+
+    const toggleMenu = () => {
+        if(menu == " off") {
+            setMenu("on")
+        } else {
+            setMenu("off")
+        }
+    }
+
     return (
         <div className="navbar">
             <div>
-                <img src={headshot} alt="Of Tyler Marois" />
+                <img className="menu" src={MenuIcon} alt="" />
+                <img onClick={() => {}} className="me" src={headshot} alt="Of Tyler Marois" />
                 <button>
                     <Link className="nav"
                     activeClass="active"
