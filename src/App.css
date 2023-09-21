@@ -386,15 +386,40 @@ h2 {
   height: 50px;
   overflow: hidden;
   cursor: pointer;
+  z-index: 100;
 }
 
 .dropdown {
   position: absolute;
   top: 100px;
-  right: 20px;
-  background-color: #fff;
-  padding: 10px 20px;
-  width: 200px;
+  right: 10%;
+  background-color: rgba(202, 34, 34, 0.3);
+  padding: 10px 0px;
+  width: 80%;
+  z-index: 50;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 20px;
+  transition: all cubic-bezier(0.39, 0.575, 0.565, 1) .3s;
+}
+
+.dropdown button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown.closed {
+  visibility: hidden;
+  opacity: 0;
+  transform: 0px 0px;
+}
+
+.dropdown.open {
+  transform: 80% 100px;
 }
 
 
