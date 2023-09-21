@@ -101,6 +101,7 @@ h2 {
   transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 
+
 .navbar div button:hover {
   scale: 105%;
   cursor: pointer;
@@ -378,6 +379,24 @@ h2 {
   margin: 0px 10px;
 }
 
+.menu img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 50px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  background-color: #fff;
+  padding: 10px 20px;
+  width: 200px;
+}
+
 
 @media (max-width: 1375px) {
   .navbar {
@@ -537,7 +556,8 @@ h2 {
 
   .navbar {
     border-radius: 0px;
-    border: 2px solid black;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
   }
 
   .navbar div {
@@ -545,10 +565,7 @@ h2 {
     justify-content: flex-end;
   }
 
-  .menu {
-    height: 70%;
-    cursor: pointer;
-  }
+  
 }
 
 

@@ -8,12 +8,14 @@ import { Skills } from './sections/skills';
 import { Experience } from './sections/experience';
 import { Projects } from './sections/projects';
 import { Contact } from './sections/contact';
+import { Menu } from './components/menu';
 
 
 function App() {
   return (
     <div className="App">
         <Navbar/>
+        <Menu/>
         <Hero/>
         <About/>
         <Skills/>
