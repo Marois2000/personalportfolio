@@ -21,6 +21,7 @@ export const Menu = () => {
             <div className={`dropdown ${menu? 'open' : 'closed'}`}>
                     <button>
                         <Link className="nav"
+                        onClick={() => set()}
                         activeClass="active"
                         to="hero"
                         spy={true}
@@ -30,15 +31,17 @@ export const Menu = () => {
                         >Home</Link>
                     </button>
                     <button><Link className="nav"
+                        onClick={() => set()}
                         activeClass="active"
                         to="about"
                         spy={true}
                         smooth={true}
-                        offset={0}
+                        offset={-200}
                         duration={500}
                         >About</Link></button>
                     <button><Link className="nav"
                         activeClass="active"
+                        onClick={() => set()}
                         to="skills"
                         spy={true}
                         smooth={true}
@@ -47,6 +50,7 @@ export const Menu = () => {
                         >Skills</Link></button>
                     <button><Link className="nav"
                         activeClass="active"
+                        onClick={() => set()}
                         to="experience"
                         spy={true}
                         smooth={true}
@@ -55,14 +59,16 @@ export const Menu = () => {
                         >Experience</Link></button>
                     <button><Link className="nav"
                         activeClass="active"
+                        onClick={() => set()}
                         to="projects"
                         spy={true}
                         smooth={true}
-                        offset={0}
+                        offset={-50}
                         duration={500}
                         >Projects</Link></button>
                     <button><Link className="nav"
                         activeClass="active"
+                        onClick={() => set()}
                         to="contact"
                         spy={true}
                         smooth={true}

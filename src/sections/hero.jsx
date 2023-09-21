@@ -29,26 +29,29 @@ export const Hero = () => {
 
     return (
         <div className="hero section" title="home">
-            <div className="title">
-                <h1>Hello!</h1>
-                <h2>I am Tyler Marois</h2>
-                <span ref={slogan}></span>
-                <br />
-                <button className="point"><Link
-                    activeClass="active"
-                    to="contact"
-                    spy={true}
-                    smooth={true}
-                    offset={175}
-                    duration={500}
-                    >Contact Me</Link></button>
-            </div>
+            <div className="info">
+                <div className="title">
+                    <h1>Hello!</h1>
+                    <h2>I am Tyler Marois</h2>
+                    <span ref={slogan}></span>
+                </div>
+                <div className="contactb">
+                    <button className="point"><Link
+                            activeClass="active"
+                            to="contact"
+                            spy={true}
+                            smooth={true}
+                            offset={175}
+                            duration={500}
+                        >Contact Me</Link></button>
+                    </div>
+                </div>
+                
             <Tilt className="tilter" tiltReverse={true}>
                 <div className="profile">
                     <img src={headshot} alt="of Tyler Marois" />
                 </div>
             </Tilt>
-            
         </div>
     );
 }
