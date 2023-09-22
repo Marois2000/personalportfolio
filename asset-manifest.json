@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personalportfolio/static/css/main.9918943a.css",
-    "main.js": "/personalportfolio/static/js/main.9587a26c.js",
+    "main.css": "/personalportfolio/static/css/main.94825d46.css",
+    "main.js": "/personalportfolio/static/js/main.8f1f4d97.js",
     "static/media/headshot_onblob.png": "/personalportfolio/static/media/headshot_onblob.72462c8a937b773217d3.png",
     "static/media/headshot.png": "/personalportfolio/static/media/headshot.08585127dd812e8bdf0d.png",
     "static/media/gc.jpg": "/personalportfolio/static/media/gc.ed77456735c48d2455ce.jpg",
@@ -13,11 +13,11 @@
     "static/media/insta.svg": "/personalportfolio/static/media/insta.8ff7ce92ad753b591ed4c1d03e84c026.svg",
     "static/media/facebook.svg": "/personalportfolio/static/media/facebook.ef824524d63a006c5931918fd6a1cd47.svg",
     "index.html": "/personalportfolio/index.html",
-    "main.9918943a.css.map": "/personalportfolio/static/css/main.9918943a.css.map",
-    "main.9587a26c.js.map": "/personalportfolio/static/js/main.9587a26c.js.map"
+    "main.94825d46.css.map": "/personalportfolio/static/css/main.94825d46.css.map",
+    "main.8f1f4d97.js.map": "/personalportfolio/static/js/main.8f1f4d97.js.map"
   },
   "entrypoints": [
-    "static/css/main.9918943a.css",
-    "static/js/main.9587a26c.js"
+    "static/css/main.94825d46.css",
+    "static/js/main.8f1f4d97.js"
   ]
 }
