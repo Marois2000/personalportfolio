@@ -137,10 +137,15 @@ h2 {
   margin: 50px;
 }
 
-.contactb {
-  align-items: center;
-  justify-content: center;
+.hero .info {
+  align-items: flex-start;
+  justify-content: flex-start;
   display: flex;
+  flex-direction: column;
+}
+
+.contactb {
+  margin: 0px 10px;
 }
 
 .hero .profile img {
@@ -248,6 +253,7 @@ h2 {
   background-color: var(--accent);
   border-radius: 30px;
   margin: 30px;
+  box-shadow: 0px 5px 5px rgba(255, 255, 255, .7);
 }
 
 .jobcard h1 {
@@ -306,6 +312,8 @@ h2 {
   border-radius: 30px;
   margin: 10px;
   cursor: pointer;
+  box-shadow: 0px 5px 5px rgba(255, 255, 255, .7);
+
 }
 
 .projectcard .projectimage {
@@ -587,6 +595,69 @@ h2 {
 
   .menu img{
     display: flex;
+  }
+
+  .about p{
+    width: 35ch;
+  }
+
+
+  .skills .skillholder {
+    grid-template-columns: repeat(2, minmax(200px, 2fr)); /* Adjust the column width as needed */
+    justify-content: center;
+    align-items: center;
+    padding-left: 10vw;
+  }
+
+  .projectcard {
+    width: 70vw;
+    flex-direction: column;
+  }
+
+  .projectcard .projectimage img {
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .projectcard .projectimage img:hover {
+    scale: 1;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: none;
+  }
+
+  .projectcard .projectdescription {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .contact a {
+    font-size: 1rem;
+  }
+
+  .contact h2 {
+    font-size: 1rem;
+  }
+
+  .contact .personals {
+    flex-direction: column;
+  }
+
+  .hero .info {
+    align-items: center;
+    justify-content: center;
+    display: inline;
+    flex-direction: column;
+  }
+
+  .contactb {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
   }
 }
 

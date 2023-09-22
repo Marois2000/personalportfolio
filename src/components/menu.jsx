@@ -1,6 +1,6 @@
 import React from "react";
 import MenuIcon from "../img/menu.png"
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-scroll";
 
 export const Menu = () => {
@@ -12,8 +12,28 @@ export const Menu = () => {
         console.log(menu)
     }
 
+    let menuRef = useRef();
+
+  useEffect(() => {
+    let handler = (e)=>{
+      if(!menuRef.current.contains(e.target)){
+        setMenu(false);
+        console.log(menuRef.current);
+      }      
+    };
+
+    document.addEventListener("mousedown", handler);
+    
+
+    return() =>{
+      document.removeEventListener("mousedown", handler);
+    }
+
+  });
+
+
     return (
-        <div className="menucontainer" onClick={() => set()}>
+        <div className="menucontainer" ref={menuRef} onClick={() => set()}>
 
             <div className="menu" onClick={() => set()}>
                 <img src={MenuIcon} alt="" />
@@ -36,7 +56,7 @@ export const Menu = () => {
                         to="about"
                         spy={true}
                         smooth={true}
-                        offset={-200}
+                        offset={-100}
                         duration={500}
                         >About</Link></button>
                     <button><Link className="nav"
@@ -45,7 +65,7 @@ export const Menu = () => {
                         to="skills"
                         spy={true}
                         smooth={true}
-                        offset={-75}
+                        offset={-50}
                         duration={500}
                         >Skills</Link></button>
                     <button><Link className="nav"
