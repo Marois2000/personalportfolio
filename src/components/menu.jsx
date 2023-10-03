@@ -35,8 +35,12 @@ export const Menu = () => {
     return (
         <div className="menucontainer" ref={menuRef} onClick={() => set()}>
 
-            <div className="menu" onClick={() => set()}>
-                <img src={MenuIcon} alt="" />
+            <div className="menu"  onClick={() => set()}>
+                <div className={`menu-icon ${menu? 'open' : 'closed'}`}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
             <div className={`dropdown ${menu? 'open' : 'closed'}`}>
                     <button>
