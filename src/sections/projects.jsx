@@ -4,6 +4,8 @@ import timevault from "../img/project_images/timevault.jpg";
 import swiftreach from "../img/project_images/swiftreach.jpeg";
 import chess from "../img/project_images/chess.png";
 import gc from "../img/project_images/gc.jpg";
+import processes from "../img/project_images/process-schedule.png";
+
 
 export const Projects = () => {
     return (
@@ -33,6 +35,12 @@ export const Projects = () => {
                 name="Guarino Construction Website"
                 description="The Guarino Construction website stands as a digital testament to the company's excellence in the construction industry. This online platform was thoughtfully crafted to showcase Guarino Construction's exceptional work, projects, and commitment to quality."
                 demo="https://www.guarinoconstruction.com/"
+                />
+                <ProjectCard img={processes}
+                alt="FCFS Vs. Round Robin"
+                name="Process Scheduling Algorithms"
+                description="This project implements two process scheduling algorithms: First Come First Serve (FCFS) and Round Robin (RR). The goal of this project is to collect data about these algorithms and compare their results. Additionally, a graphical user interface (GUI) has been added to visualize the FCFS and RR algorithms in action."
+                demo="https://github.com/Marois2000/Process-Scheduling-algorithm-watcher"
                 />
             </div>
             

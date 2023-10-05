@@ -269,6 +269,8 @@ h2 {
 
 .skillcard img{
   margin-right: 10px;
+  width: 48px;
+  height: 48px;
 }
 
 .skills {

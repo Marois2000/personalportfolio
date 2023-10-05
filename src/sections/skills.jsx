@@ -13,6 +13,8 @@ import python from "../img/skill_icons/python.png";
 import git from "../img/skill_icons/git.png";
 import unity from "../img/skill_icons/unity.png";
 import sql from "../img/skill_icons/sql.png";
+import postgres from "../img/skill_icons/postgres.png";
+import node from "../img/skill_icons/node-js.png";
 import firebase from "../img/skill_icons/firebase.png";
 
 
@@ -35,6 +37,8 @@ export const Skills = () => {
                 <Skill img={unity} skill="Unity"/>
                 <Skill img={sql} skill="SQL"/>
                 <Skill img={firebase} skill="Firebase"/>
+                <Skill img={postgres} skill="Postgres"/>
+                <Skill img={node} skill="Node JS"/>
 
             </div>
         </div>
